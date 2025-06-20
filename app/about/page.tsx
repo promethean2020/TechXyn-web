@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Users, Award, Clock, Zap, CheckCircle } from 'lucide-react';
+import { Users, Award, Clock, Zap } from 'lucide-react';
 import Layout from '@/components/Layout';
 
 const AboutPage = () => (
@@ -26,10 +26,10 @@ const AboutPage = () => (
             </p>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Our team combines years of experience in web development with the latest advances in artificial intelligence 
-              to create solutions that not only meet today's needs but are ready for tomorrow's challenges.
+              to create solutions that not only meet today&rsquo;s needs but are ready for tomorrow&rsquo;s challenges.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              We're not just developers; we're problem solvers, innovators, and partners in your success.
+              We&rsquo;re not just developers; we&rsquo;re problem solvers, innovators, and partners in your success.
             </p>
           </div>
           <div className="relative">
@@ -93,7 +93,7 @@ const AboutPage = () => (
           <div className="p-8 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 rounded-2xl border border-cyan-400/30">
             <h3 className="text-2xl font-bold mb-4 text-white">Ready to Work Together?</h3>
             <p className="text-gray-300 mb-6">
-              Let's discuss how we can help transform your business with technology.
+              Let&rsquo;s discuss how we can help transform your business with technology.
             </p>
             <Link
               href="/contact-us"
