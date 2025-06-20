@@ -16,7 +16,7 @@ const TechXYN = () => {
         const particle = document.createElement('div');
         particle.className = 'absolute w-[2px] h-[2px] bg-blue-300/60 rounded-full animate-float';
         particle.style.left = `${Math.random() * 100}%`;
-        particle.style.top = `${Math.random() * 100}%`;
+        particle.style.top = `${Math.random() * 100}%h`;
         particle.style.animationDelay = `${Math.random() * 6}s`;
         particle.style.animationDuration = `${Math.random() * 3 + 3}s`;
         particlesContainerRef.current.appendChild(particle);
@@ -132,7 +132,7 @@ serviceCards.forEach((card, index) => {
           <ul className="flex list-none gap-8 max-md:hidden">
             {['home', 'services', 'about', 'contact'].map((section) => (
               <li key={section}>
-                <Link href={`https://www.techxyn.com/${section}`} className="text-white no-underline font-medium relative transition-all duration-300 hover:text-blue-300 hover:-translate-y-0.5 after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-blue-300 after:to-purple-600 after:transition-all after:duration-300 hover:after:w-full">
+                <Link href={`https://www.techxyn.com/${section === 'home'? '' : section}`} className="text-white no-underline font-medium relative transition-all duration-300 hover:text-blue-300 hover:-translate-y-0.5 after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-blue-300 after:to-purple-600 after:transition-all after:duration-300 hover:after:w-full">
                   {section.charAt(0).toUpperCase() + section.slice(1)}
                 </Link>
               </li>
