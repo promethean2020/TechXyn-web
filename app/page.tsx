@@ -86,6 +86,10 @@ serviceCards.forEach((card, index) => {
   observer.observe(el);
 });
 
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       <Head>
@@ -185,8 +189,9 @@ serviceCards.forEach((card, index) => {
         <div className="max-w-[1200px] mx-auto grid grid-cols-2 gap-16 items-center max-md:grid-cols-1 max-md:text-center">
           <div>
             <h2 className="text-4xl font-extrabold mb-6 text-blue-300">Why Choose TechXYN?</h2>
-            <p className="text-lg text-white/80 mb-6">We're a team of passionate developers and AI specialists dedicated to delivering exceptional digital solutions. Our expertise spans the entire technology stack, from sleek user interfaces to complex backend systems and intelligent AI integrations.</p>
+            <p className="text-lg text-white/80 mb-6">We&rsquo;re a team of passionate developers and AI specialists dedicated to delivering exceptional digital solutions. Our expertise spans the entire technology stack, from sleek user interfaces to complex backend systems and intelligent AI integrations.</p>
             <p className="text-lg text-white/80 mb-6">With years of experience in modern web technologies and emerging AI trends, we help businesses stay ahead of the curve. Every project is approached with innovation, precision, and a commitment to excellence.</p>
+
             <div className="grid grid-cols-2 gap-6 mt-8">
               {[
                 { number: '150+', label: 'Projects Delivered' },
@@ -213,7 +218,10 @@ serviceCards.forEach((card, index) => {
           <h2 className="text-4xl font-extrabold mb-6 bg-gradient-to-r from-blue-300 to-purple-600 bg-clip-text text-transparent">
             Ready to Transform Your Ideas?
           </h2>
-          <p className="text-lg text-white/80 mb-10">Let's discuss your project and create something amazing together. We're here to turn your vision into reality with cutting-edge technology and innovative solutions.</p>
+          <p className="text-lg text-white/80 mb-10">
+  Let&rsquo;s discuss your project and create something amazing together.
+</p>
+
           <div className="flex gap-6 justify-center flex-wrap">
             <Link href={"http://localhost:3000/contact-us"} legacyBehavior>
             <a href="mailto:info@techxyn.com" className="px-10 py-4 rounded-full bg-gradient-to-r from-blue-300 to-purple-600 text-white font-semibold text-lg no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(64,224,255,0.3)]">
