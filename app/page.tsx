@@ -67,24 +67,24 @@ const TechXYN = () => {
     };
 
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
-        }
-      });
-    }, observerOptions);
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target as HTMLElement;
+      el.style.opacity = '1';
+      el.style.transform = 'translateY(0)';
+    }
+  });
+}, observerOptions);
+
 
     const serviceCards = document.querySelectorAll('.service-card');
-    serviceCards.forEach((card, index) => {
-      card.style.opacity = '0';
-      card.style.transform = 'translateY(30px)';
-      card.style.transition = `all 0.6s ease ${index * 0.1}s`;
-      observer.observe(card);
-    });
-
-    return () => observer.disconnect();
-  }, []);
+serviceCards.forEach((card, index) => {
+  const el = card as HTMLElement;
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(30px)';
+  el.style.transition = `all 0.6s ease ${index * 0.1}s`;
+  observer.observe(el);
+});
 
   return (
     <>
