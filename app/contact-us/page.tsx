@@ -33,10 +33,10 @@ const ContactPage = () => {
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="text-center mb-16">
             <h1 className="text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-              Let's Build Something Amazing
+              Let&rsquo;s Build Something Amazing
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Ready to transform your ideas into reality? Get in touch with us and let's discuss your next project.
+              Ready to transform your ideas into reality? Get in touch with us and let&rsquo;s discuss your next project.
             </p>
           </div>
 
