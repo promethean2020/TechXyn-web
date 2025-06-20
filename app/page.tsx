@@ -132,7 +132,7 @@ serviceCards.forEach((card, index) => {
           <ul className="flex list-none gap-8 max-md:hidden">
             {['home', 'services', 'about', 'contact-us'].map((section) => (
               <li key={section}>
-                <Link href={`http://localhost:3000/${section}`} className="text-white no-underline font-medium relative transition-all duration-300 hover:text-blue-300 hover:-translate-y-0.5 after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-blue-300 after:to-purple-600 after:transition-all after:duration-300 hover:after:w-full">
+                <Link href={`https://www.techxyn.com/${section}`} className="text-white no-underline font-medium relative transition-all duration-300 hover:text-blue-300 hover:-translate-y-0.5 after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-blue-300 after:to-purple-600 after:transition-all after:duration-300 hover:after:w-full">
                   {section.charAt(0).toUpperCase() + section.slice(1)}
                 </Link>
               </li>
@@ -151,10 +151,10 @@ serviceCards.forEach((card, index) => {
             Empowering businesses with cutting-edge full-stack development and AI solutions. We transform ideas into digital reality.
           </p>
           <div className="flex gap-6 justify-center flex-wrap animate-[fadeInUp_1s_ease-out_0.6s_both]">
-            <Link href="http://localhost:3000/contact" className="px-10 py-4 rounded-full bg-gradient-to-r from-blue-300 to-purple-600 text-white font-semibold text-lg no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(64,224,255,0.3)]">
+            <Link href="https://www.techxyn.com/contact" className="px-10 py-4 rounded-full bg-gradient-to-r from-blue-300 to-purple-600 text-white font-semibold text-lg no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(64,224,255,0.3)]">
               Contact Us!
             </Link>
-            <Link href="http://localhost:3000/services" className="px-10 py-4 rounded-full bg-transparent text-blue-300 border-2 border-blue-300 font-semibold text-lg no-underline transition-all duration-300 hover:bg-blue-300 hover:text-[#0f0f23] hover:-translate-y-1">
+            <Link href="https://www.techxyn.com/services" className="px-10 py-4 rounded-full bg-transparent text-blue-300 border-2 border-blue-300 font-semibold text-lg no-underline transition-all duration-300 hover:bg-blue-300 hover:text-[#0f0f23] hover:-translate-y-1">
               Explore Services
             </Link>
           </div>
@@ -223,12 +223,12 @@ serviceCards.forEach((card, index) => {
 </p>
 
           <div className="flex gap-6 justify-center flex-wrap">
-            <Link href={"http://localhost:3000/contact-us"} legacyBehavior>
+            <Link href={"https://www.techxyn.com/contact-us"} legacyBehavior>
             <a href="mailto:info@techxyn.com" className="px-10 py-4 rounded-full bg-gradient-to-r from-blue-300 to-purple-600 text-white font-semibold text-lg no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(64,224,255,0.3)]">
               Get In Touch
             </a>
             </Link>
-            <Link href={"http://localhost:3000/contact-us"} legacyBehavior>
+            <Link href={"https://www.techxyn.com/contact-us"} legacyBehavior>
             <a href="tel:03454506130" className="px-10 py-4 rounded-full bg-transparent text-blue-300 border-2 border-blue-300 font-semibold text-lg no-underline transition-all duration-300 hover:bg-blue-300 hover:text-[#0f0f23] hover:-translate-y-1">
               Call Us Now
             </a>
