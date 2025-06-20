@@ -87,7 +87,7 @@ const ServicesPage = () => (
         <div className="text-center">
           <div className="p-8 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 rounded-2xl border border-cyan-400/30">
             <h3 className="text-2xl font-bold mb-4 text-white">Ready to Get Started?</h3>
-            <p className="text-gray-300 mb-6">Let's discuss your project and create something amazing together.</p>
+            <p className="text-gray-300 mb-6">Let&rsquo;s discuss your project and create something amazing together.</p>
             <Link
               href="/contact-us"
               className="inline-block px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full text-white font-semibold hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/25 transition-all duration-300"
