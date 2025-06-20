@@ -126,8 +126,8 @@ serviceCards.forEach((card, index) => {
       {/* Header */}
       <header className="fixed top-0 w-full backdrop-blur-2xl bg-[rgba(15,15,35,0.8)] border-b border-blue-300/20 z-[1000] transition-all duration-300">
         <nav className="flex justify-between items-center px-[5%] py-4 max-w-[1400px] mx-auto">
-          <div className="text-2xl font-extrabold bg-gradient-to-r from-blue-300 to-purple-600 bg-clip-text text-transparent">
-            TechXYN
+          <div className="flex items-center space-x-2 text-2xl font-extrabold bg-gradient-to-r from-blue-300 to-purple-600 bg-clip-text text-transparent">
+            <Image src="/logo.png" alt="TechXYN Logo" width={80} height={80} />
           </div>
           <ul className="flex list-none gap-8 max-md:hidden">
             {['home', 'services', 'about', 'contact'].map((section) => (
